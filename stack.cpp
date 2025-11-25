@@ -1,0 +1,24 @@
+#include<iostream>
+#include<vector>
+#include<stack>
+using namespace std;
+int main(){
+    stack<int> s;
+    s.push(1);
+     s.push(12);
+      s.push(13);
+       s.push(14);
+        s.push(15);
+        stack<int> s2;
+        s2.swap(s);
+        cout<<s2.top()<<endl;
+while(!s.empty())
+{
+    cout<<s.top()<<" ";//15,14,13,12,1
+    s.pop();
+
+
+}
+cout<<endl;
+return 0;
+}
